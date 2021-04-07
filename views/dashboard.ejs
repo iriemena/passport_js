@@ -1,0 +1,10 @@
+<h2>Welcome back, <%= user || usern %> </h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptas?</p>
+
+
+<a href="user/logout" class="btn btn-secondary">Logout</a>
+<br><br>
+<!-- or using method override -->
+<form action="/user/logout?_method=DELETE" method="post">
+    <button type="submit">Logout</button>
+</form>
